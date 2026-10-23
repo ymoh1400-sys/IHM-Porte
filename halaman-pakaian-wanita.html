@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakaian Pria - Katalog Pilihan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- TAMBAHAN CSS KHUSUS UNTUK MEMASTIKAN SLIDER 7 GAMBAR BERJALAN SEMPURNA -->
+    <style>
+        .product-slider-box {
+            position: relative;
+            overflow: hidden !important;
+            width: 100%;
+            /* Tinggi kotak akan otomatis menyesuaikan dengan tinggi asli gambar */
+            background-color: transparent !important; 
+        }
+        .slider-images {
+            display: flex !important;
+            width: 700% !important; /* 7 gambar x 100% */
+            transition: transform 0.4s ease-in-out;
+        }
+        .slider-images img {
+            width: 14.2857% !important; /* 100% dibagi 7 gambar */
+            height: auto !important;     /* Tinggi otomatis mengikuti proporsi asli gambar */
+            display: block;
+            object-fit: unset !important;
+            flex-shrink: 0 !important;
+        }
+    </style>
+</head>
+<body class="product-page-body">
+    <header class="modern-header">
+        <div class="header-content">
+            <a href="index.html#layanan" class="nav-back-btn"><span class="arrow">←</span> Kembali</a>
+            <div class="header-title-box">
+                <span class="sub-header">LAYANAN UTAMA</span>
+                <h1 class="main-header-title">Catalog Shirt Women's IHM PORTE</h1>
+            </div>
+            <div class="store-badge">👕 Shirt</div>
+        </div>
+    </header>
+
+    <main class="product-catalog-container">
+        <div class="catalog-intro">
+            <h2>Pilih Jenis Kaos Incaranmu!</h2>
+            <p>Geser atau klik panah pada foto untuk melihat sudut lain produk, lalu isi data diri untuk memesan.</p>
+        </div>
+
+        <div class="shopee-product-grid">
+            
+            <!-- PRODUK 1 -->
+            <div class="modern-product-card">
+                <div class="product-slider-box">
+                    <div class="slider-images" id="slider-1">
+                        <img src="ihmb1.png" alt="Foto 1">
+                        <img src="ihmb2.png" alt="Foto 2">
+                        <img src="ihmb3.png" alt="Foto 3">
+                        <img src="ihma4.png" alt="Foto 4">
+                        <img src="ihmb5.png" alt="Foto 5">
+                        <img src="ihma6.png" alt="Foto 6">
+                        <img src="ihmb7.png" alt="Foto 7">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(1, -1)">❮</button>
+                    <button class="slider-btn next-btn" onclick="moveSlide(1, 1)">❯</button>
+                    <span class="card-badge badge-orange">Best Seller</span>
+                </div>
+                <div class="product-details">
+                    <span class="category-tag">IHM PORTE</span>
+                    <h3 class="product-name">Shirt Women's Maxfa IHM Porte - Short Sleeve</h3>
+                    <p class="product-desc">Kaos pilihan wanita dengan desain elegan dan modern.</p>
+                    <div class="price-row"><div class="price-tag"><span class="currency">Rp</span><span class="amount">55.000</span><span class="unit">/pcs</span></div></div>
+                    <div class="product-stats"><span class="rating-box">⭐ 9,9</span><span class="sold-box">5rb+ Terjual</span></div>
+                    
+                    <form class="wa-order-form" onsubmit="sendToWhatsApp(event, 'Shirt Womens Maxfa IHM Porte - Short Sleeve', 'Rp55.000 /pcs')">
+                        <input type="text" placeholder="Nama Lengkap" class="form-input-buyer" required>
+                        <input type="text" placeholder="Alamat Pengiriman / Ambil" class="form-input-buyer" required>
+                        <input type="tel" placeholder="Nomor HP / WhatsApp" class="form-input-buyer" required>
+                        <button type="submit" class="action-btn">Pesan via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRODUK 2 -->
+            <div class="modern-product-card">
+                <div class="product-slider-box">
+                    <div class="slider-images" id="slider-2">
+                        <img src="ihmd1.png" alt="Foto 1">
+                        <img src="ihmd2.png" alt="Foto 2">
+                        <img src="ihmd3.png" alt="Foto 3">
+                        <img src="ihmd4.png" alt="Foto 4">
+                        <img src="ihmd5.png" alt="Foto 5">
+                        <img src="ihmd6.png" alt="Foto 6">
+                        <img src="ihmd7.png" alt="Foto 7">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(2, -1)">❮</button>
+                    <button class="slider-btn next-btn" onclick="moveSlide(2, 1)">❯</button>
+                    <span class="card-badge badge-blue">Exclusive✨</span>
+                </div>
+                <div class="product-details">
+                    <span class="category-tag">IHM Porte</span>
+                    <h3 class="product-name">Shirt Women's Andara IHM Porte - Long Sleeve</h3>
+                    <p class="product-desc">Desain terbaru dan modern dengan detail baju exclusive.</p>
+                    <div class="price-row"><div class="price-tag"><span class="currency">Rp</span><span class="amount">70.000</span><span class="unit">/pcs</span></div></div>
+                    <div class="product-stats"><span class="rating-box">⭐ 4.8</span><span class="sold-box">1,5rb+ Terjual</span></div>
+                    
+                    <form class="wa-order-form" onsubmit="sendToWhatsApp(event, 'Shirt Women Andara IHM Porte - Long Sleeve', 'Rp70.000 /pcs')">
+                        <input type="text" placeholder="Nama Lengkap" class="form-input-buyer" required>
+                        <input type="text" placeholder="Alamat Pengiriman / Ambil" class="form-input-buyer" required>
+                        <input type="tel" placeholder="Nomor HP / WhatsApp" class="form-input-buyer" required>
+                        <button type="submit" class="action-btn">Pesan via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRODUK 3 -->
+            <div class="modern-product-card">
+                <div class="product-slider-box">
+                    <div class="slider-images" id="slider-3">
+                        <img src="ihml1.png" alt="Foto 1">
+                        <img src="ihml1.png" alt="Foto 2">
+                        <img src="ihml1.png" alt="Foto 3">
+                        <img src="ihml1.png" alt="Foto 4">
+                        <img src="ihml1.png" alt="Foto 5">
+                        <img src="ihml1.png" alt="Foto 6">
+                        <img src="ihml1.png" alt="Foto 7">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(3, -1)">❮</button>
+                    <button class="slider-btn next-btn" onclick="moveSlide(3, 1)">❯</button>
+                    <span class="card-badge badge-purple">Coming Soon</span>
+                </div>
+                <div class="product-details">
+                    <span class="category-tag">IHM Porte</span>
+                    <h3 class="product-name">Coming Soon</h3>
+                    <p class="product-desc">Ditunggu desain produk menarik yang akan datang</p>
+                    <div class="price-row"><div class="price-tag"><span class="currency">Rp</span><span class="amount">-</span><span class="unit">/ pcs</span></div></div>
+                    <div class="product-stats"><span class="rating-box">⭐ 9.9</span><span class="sold-box">0 Terjual</span></div>
+                    
+                    <form class="wa-order-form" onsubmit="sendToWhatsApp(event, 'Scan Dokumen to PDF / JPG', 'Rp500 /halaman')">
+                        <input type="text" placeholder="Nama Lengkap" class="form-input-buyer" required>
+                        <input type="text" placeholder="Alamat Pengiriman / Ambil" class="form-input-buyer" required>
+                        <input type="tel" placeholder="Nomor HP / WhatsApp" class="form-input-buyer" required>
+                        <button type="submit" class="action-btn">Pesan via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRODUK 4 -->
+            <div class="modern-product-card">
+                <div class="product-slider-box">
+                    <div class="slider-images" id="slider-4">
+                        <img src="ihml1.png" alt="Foto 1">
+                        <img src="ihml1.png" alt="Foto 2">
+                        <img src="ihml1.png" alt="Foto 3">
+                        <img src="ihml1.png" alt="Foto 4">
+                        <img src="ihml1.png" alt="Foto 5">
+                        <img src="ihml1.png" alt="Foto 6">
+                        <img src="ihml1.png" alt="Foto 7">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(4, -1)">❮</button>
+                    <button class="slider-btn next-btn" onclick="moveSlide(4, 1)">❯</button>
+                    <span class="card-badge badge-green">Coming Soon</span>
+                </div>
+                <div class="product-details">
+                    <span class="category-tag">IHM Porte</span>
+                    <h3 class="product-name">Coming Soon</h3>
+                    <p class="product-desc">Ditunggu desain produk menarik yang akan datang</p>
+                    <div class="price-row"><div class="price-tag"><span class="currency">Rp</span><span class="amount">-</span><span class="unit">/ pcs</span></div></div>
+                    <div class="product-stats"><span class="rating-box">⭐ 9.9</span><span class="sold-box">0 Terjual</span></div>
+                    
+                    <form class="wa-order-form" onsubmit="sendToWhatsApp(event, 'Scan / Fotocopy KTP & Kartu Identitas', 'Rp1.000 /lembar')">
+                        <input type="text" placeholder="Nama Lengkap" class="form-input-buyer" required>
+                        <input type="text" placeholder="Alamat Pengiriman / Ambil" class="form-input-buyer" required>
+                        <input type="tel" placeholder="Nomor HP / WhatsApp" class="form-input-buyer" required>
+                        <button type="submit" class="action-btn">Pesan via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- PRODUK 5 -->
+            <div class="modern-product-card">
+                <div class="product-slider-box">
+                    <div class="slider-images" id="slider-5">
+                        <img src="ihml1.png" alt="Foto 1">
+                        <img src="ihml1.png" alt="Foto 2">
+                        <img src="ihml1.png" alt="Foto 3">
+                        <img src="ihml1.png" alt="Foto 4">
+                        <img src="ihml1.png" alt="Foto 5">
+                        <img src="ihml1.png" alt="Foto 6">
+                        <img src="ihml1.png" alt="Foto 7">
+                    </div>
+                    <button class="slider-btn prev-btn" onclick="moveSlide(5, -1)">❮</button>
+                    <button class="slider-btn next-btn" onclick="moveSlide(5, 1)">❯</button>
+                    <span class="card-badge badge-red">Coming Soon</span>
+                </div>
+                <div class="product-details">
+                    <span class="category-tag">IHM Porte</span>
+                    <h3 class="product-name">Coming Soon</h3>
+                    <p class="product-desc">Ditunggu desain produk menarik yang akan datang</p>
+                    <div class="price-row"><div class="price-tag"><span class="currency">Rp</span><span class="amount">-</span><span class="unit">/ pcs</span></div></div>
+                    <div class="product-stats"><span class="rating-box">⭐ 9.9</span><span class="sold-box">0 Terjual</span></div>
+                    
+                    <form class="wa-order-form" onsubmit="sendToWhatsApp(event, 'Paket Fotocopy Satu Buku Utuh', 'Rp15.000 /modul')">
+                        <input type="text" placeholder="Nama Lengkap" class="form-input-buyer" required>
+                        <input type="text" placeholder="Alamat Pengiriman / Ambil" class="form-input-buyer" required>
+                        <input type="tel" placeholder="Nomor HP / WhatsApp" class="form-input-buyer" required>
+                        <button type="submit" class="action-btn">Pesan via WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        const slideIndexes = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+
+        function moveSlide(sliderId, direction) {
+            const slider = document.getElementById(`slider-${sliderId}`);
+            const totalImages = slider.children.length; // Sekarang bernilai 7
+            
+            slideIndexes[sliderId] += direction;
+            
+            if (slideIndexes[sliderId] >= totalImages) {
+                slideIndexes[sliderId] = 0;
+            } else if (slideIndexes[sliderId] < 0) {
+                slideIndexes[sliderId] = totalImages - 1;
+            }
+            
+            // Menggeser persentase sebesar indeks dikali lebar 1 gambar (100 / 7 = 14.2857%)
+            let percentage = slideIndexes[sliderId] * (100 / totalImages);
+            slider.style.transform = `translateX(-${percentage}%)`;
+        }
+
+        function sendToWhatsApp(event, productName, productPrice) {
+            event.preventDefault();
+            
+            const card = event.target.closest('.modern-product-card');
+            const inputs = card.querySelectorAll('.form-input-buyer');
+            const nama = inputs[0].value;
+            const alamat = inputs[1].value;
+            const noHp = inputs[2].value;
+
+            const phoneNumber = "62895622983504";
+
+            const message = `Halo Admin, saya ingin memesan produk:%0A%0A` +
+                            `*Nama Produk:* ${productName}%0A` +
+                            `*Harga:* ${productPrice}%0A%0A` +
+                            `*DATA PEMBELI:*%0A` +
+                            `- Nama: ${nama}%0A` +
+                            `- Alamat: ${alamat}%0A` +
+                            `- No HP: ${noHp}%0A%0A` +
+                            `Mohon proses pesanan saya, terima kasih!`;
+
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
